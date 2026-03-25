@@ -1,0 +1,37 @@
+{
+  "students": [
+    {
+      "id": "bf57",
+      "name": "Rajguru Onkar Suresh",
+      "email": "onkarrajguru6747@gmail.com",
+      "course": "Java",
+      "contact": "7249329461",
+      "address": "A/p: Patewadi Tal Karjat Dist.Ahilyanagar",
+      "gender": "Male",
+      "dob": "2025-03-05",
+      "qualification": "B.E."
+    },
+    {
+      "id": "a441",
+      "name": "Amar Kaygude",
+      "email": "amar019@gmail.com",
+      "course": "WebTech",
+      "contact": "7744949305",
+      "address": "Pune, Maharashtra",
+      "gender": "Male",
+      "dob": "2003-02-19",
+      "qualification": "B.E."
+    },
+    {
+      "id": "9413",
+      "name": "Tushar Saware",
+      "email": "tushar75@gmail.com",
+      "course": "Testing",
+      "contact": "9623415477",
+      "address": "A/P: Loni Sayyedmir Tal.Ashti Dist.Beed\n",
+      "gender": "Male",
+      "dob": "2003-03-05",
+      "qualification": "Diploma"
+    }
+  ]
+}

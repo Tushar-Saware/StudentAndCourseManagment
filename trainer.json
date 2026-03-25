@@ -1,0 +1,44 @@
+{
+  "trainer": [
+    {
+      "id": "2af6",
+      "name": "Pradip",
+      "email": "pradip@gmail.com",
+      "password": "123456788",
+      "contact": "8966154146",
+      "subject": "React"
+    },
+    {
+      "id": "9099",
+      "name": "onkar",
+      "email": "onkarrajguru6747@gmail.com",
+      "password": "674712",
+      "contact": "7517898991",
+      "subject": "Java"
+    },
+    {
+      "id": "d9cb",
+      "name": "tushar",
+      "email": "tushar@gmail.com",
+      "password": "123456",
+      "contact": "7876389797",
+      "subject": "Java"
+    },
+    {
+      "id": "2e23",
+      "name": "tushar",
+      "email": "tusharsaware1@gmail.com",
+      "password": "123",
+      "contact": "1234",
+      "subject": "SQL"
+    },
+    {
+      "id": "32da",
+      "name": "balaji",
+      "email": "balaji@gmail.com",
+      "password": "123",
+      "contact": "9766",
+      "subject": "Java"
+    }
+  ]
+}
