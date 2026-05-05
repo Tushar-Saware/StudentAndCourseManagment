@@ -96,7 +96,7 @@ const Footer = () => {
           {/* Social Links (FIXED) */}
           <div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
             {[
-              { label: 'GitHub',   icon: '🐙', href: 'https://github.com' },
+              { label: 'GitHub',   icon: '🐙', href: 'https://github.com/Tushar' },
               { label: 'LinkedIn', icon: '💼', href: 'https://linkedin.com' },
               { label: 'Twitter',  icon: '🐦', href: 'https://twitter.com' },
               { label: 'Email',    icon: '📧', href: 'mailto:admin@studentmgmt.com' },
