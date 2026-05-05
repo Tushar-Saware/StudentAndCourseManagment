@@ -39,6 +39,15 @@
       "password": "123",
       "contact": "9766",
       "subject": "Java"
+    },
+    {
+      "name": "Onakr walke ",
+      "email": "onkarwalke@gmail.com",
+      "password": "111",
+      "contact": "9623415490",
+      "subject": "Testing",
+      "id": "WgoFqb_YxY4"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

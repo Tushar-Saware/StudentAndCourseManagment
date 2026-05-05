@@ -21,7 +21,7 @@ const StudentRegister = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:7000/students", data);
+      await axios.post("http://localhost:8080/students", data);
       toast.success("Student Registered Successfully!");
 
       setTimeout(() => navigate("/"), 1500);

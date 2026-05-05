@@ -9,7 +9,7 @@ const DataRead = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7000/students/" + id) 
+      .get("http://localhost:8080/students/" + id) 
       .then((response) => {
         setData(response.data);
       })

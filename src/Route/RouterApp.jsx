@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes ,Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
 import Home from '../Components/Home'
 import Java from '../Components/Java'
@@ -15,31 +15,32 @@ import DataHome from '../Crud/DataHome'
 import DataRead from '../Crud/DataRead'
 import DataUpdate from '../Crud/DataUpdate'
 import Protected from '../Components/Protected'
-
+import Footer from '../Components/Footer'
 
 const RouterApp = () => {
   return (
-    <>
-      <BrowserRouter>
-      <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/java' element={<Java/>}/>
-          <Route path='/webtech' element={<WebTech/>}/>
-          <Route path='/python' element={<Python/>}/>
-          <Route path='/testing' element={<Testing/>}/>
-          <Route path='/reacts' element={<Reacts/>}/>
-          <Route path='/studentsdetails/:id' element={<StudentsDetails/>}/>
-          <Route path='/tlogin' element={<TrainerLogin/>}/>
-          <Route path='/tregister' element={<TrainerRegister/>}/>
-          <Route path='/dataCreate' element={<Protected Comp={DataCreate} />} />
-          <Route path='/dataHome' element={<Protected Comp={DataHome} />}/>
-          <Route path='/dataUpdate/:id' element={<Protected Comp={DataUpdate} />}/>
-          <Route path='/dataRead/:id' element={<Protected Comp={DataRead} />}/>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        {/* Public */}
+        <Route path='/tlogin'    element={<TrainerLogin />} />
+        <Route path='/tregister' element={<TrainerRegister />} />
 
-        </Routes>
-      </BrowserRouter>
-    </>
+        {/* Protected — all require login */}
+        <Route path='/'                    element={<Protected Comp={Home} />} />
+        <Route path='/java'                element={<Protected Comp={Java} />} />
+        <Route path='/webtech'             element={<Protected Comp={WebTech} />} />
+        <Route path='/python'              element={<Protected Comp={Python} />} />
+        <Route path='/testing'             element={<Protected Comp={Testing} />} />
+        <Route path='/reacts'              element={<Protected Comp={Reacts} />} />
+        <Route path='/studentsdetails/:id' element={<Protected Comp={StudentsDetails} />} />
+        <Route path='/dataCreate'          element={<Protected Comp={DataCreate} />} />
+        <Route path='/dataHome'            element={<Protected Comp={DataHome} />} />
+        <Route path='/dataUpdate/:id'      element={<Protected Comp={DataUpdate} />} />
+        <Route path='/dataRead/:id'        element={<Protected Comp={DataRead} />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

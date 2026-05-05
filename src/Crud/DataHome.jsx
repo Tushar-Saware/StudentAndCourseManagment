@@ -8,7 +8,7 @@ const DataHome = () => {
     const[loading,setLoading] =useState(true);
 
     useEffect(()=>{
-        axios.get("http://localhost:7000/students").then((val)=>{
+        axios.get("http://localhost:8080/students").then((val)=>{
             setData(val.data);
 
             setLoading(false);
@@ -23,7 +23,7 @@ const DataHome = () => {
         let agree = confirm("Are you sure you want to delete this?")
         
         if(agree){
-            axios.delete("http://localhost:7000/students/"+id).then((v)=>{
+            axios.delete("http://localhost:8080/students/"+id).then((v)=>{
                 console.log(v);
                 window.location.reload()
                 

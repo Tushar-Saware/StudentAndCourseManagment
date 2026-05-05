@@ -16,7 +16,7 @@ const DataUpdate = () => {
 
   // 🔹 Fetch record
   useEffect(() => {
-    axios.get(`http://localhost:7000/students/${id}`)
+    axios.get(`http://localhost:8080/students/${id}`)
       .then(res => {
         setData(res.data)
       })
@@ -27,7 +27,7 @@ const DataUpdate = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    axios.put(`http://localhost:7000/students/${id}`, data)
+    axios.put(`http://localhost:/students/${id}`, data)
       .then(() => {
         toast.success("Record updated successfully!")
         setTimeout(() => navigate('/dataHome'), 1500)
